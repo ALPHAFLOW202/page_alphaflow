@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphaflow - Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+         <h1>Contate a Alphaflow</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produto.html">OrgSync</a></li>
+            <li><a href="termos.html">Termos e Serviços</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </nav>
+    <section class="contato-section">
+        <h2>Entre em Contato</h2>
+        <form id="contato-form" action="https://formsubmit.co/alphaflow202@gmail.com" method="POST">
+            <!--<input type="hidden" name="_next" value="https://seusite.com/mensagem-enviada.html">-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        
+        <div id="mensagem-sucesso" style="display: none;">
+            <p>Obrigado por entrar em contato! Sua mensagem foi enviada.</p>
+        </div>
+
+        <div class="info-contato">
+            <p>Ou se preferir:</p>
+            <a href="mailto:alphaflow202@gmail.com">alphaflow202@gmail.com</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Alphaflow</p>
+    </footer>
+
+    <script>
+        document.getElementById('contato-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+    
+            // Aqui você pode adicionar o código para enviar o formulário via AJAX, se desejar
+    
+            // Mostra a mensagem de sucesso
+            document.getElementById('mensagem-sucesso').style.display = 'block';
+    
+            // Opcional: Oculta o formulário
+            document.getElementById('contato-form').style.display = 'none';
+        });
+    </script>
+    
+</body>
+</html>
