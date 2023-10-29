@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    
+    
+}
+
+.contêiner-imagem {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+#logo-alphaflow {
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 200px; /* Ajuste a altura conforme necessário */
+    border-radius: 50%; /* Torna a imagem redonda */
+    margin: 20px; /* Espaço ao redor da imagem */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar a barra de navegação */
+
+}
+
+nav {
+    position: fixed; /* Fixa a barra de navegação no topo */
+    top: 0; /* Alinha o topo da barra de navegação com o topo da página */
+    width: 100%; /* Faz a barra de navegação ocupar a largura total da página */
+    background: #555; /* Define uma cor de fundo para a barra de navegação */
+    z-index: 1000; /* Garante que a barra de navegação fique acima de outros elementos */
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar a barra de navegação */
+    
+}
+
+body {
+    padding-top: 50px; /* Adiciona espaço no topo para evitar que o conteúdo fique escondido atrás da barra de navegação */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utiliza flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adiciona uma margem entre os itens */
+}
+
+nav ul li a {
+    color: white;
+    padding: 1em 1.5em; /* Aumenta o espaçamento para tornar mais clicável */
+    text-decoration: none;
+    display: inline-block; /* Permite o uso de padding e margin */
+    transition: background 0.3s ease; /* Adiciona uma transição suave ao fundo */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background: #333; /* Cor de fundo ao passar o mouse ou focar */
+    color: #fff; /* Cor do texto ao passar o mouse ou focar */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+
+.carrossel {
+    position: relative;
+    max-width: 6000px; /* Largura máxima do carrossel */
+    margin: auto; /* Centraliza o carrossel */
+    overflow: hidden; /* Esconde as partes das imagens que estão fora do container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra às imagens */
+}
+
+.carrossel img {
+    display: none; /* Esconder todas as imagens inicialmente */
+    width: 100%;
+    height: auto;
+    
+}
+
+.carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.carrossel .prev {
+    left: 10px;
+}
+
+.carrossel .next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #ddd;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.texto-centralizado {
+    max-width: 800px; /* Largura máxima do texto */
+    margin: auto; /* Centraliza o texto */
+    text-align: justify; /* Alinha o texto ao centro */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor do texto */
+}
+
+.contato-section {
+    text-align: center;
+    margin: 20px;
+}
+
+#contato-form {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+#contato-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contato-form input, #contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contato-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contato-form button:hover {
+    background: #333;
+}
+
+.info-contato {
+    margin-top: 40px;
+}
+
