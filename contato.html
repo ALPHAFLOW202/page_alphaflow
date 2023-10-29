@@ -49,17 +49,20 @@
         <p>&copy; 2023 Alphaflow</p>
     </footer>
 
-    <script>
+   <script>
         document.getElementById('contato-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Previne o comportamento padrão de envio do formulário
-    
-            // Aqui você pode adicionar o código para enviar o formulário via AJAX, se desejar
+            event.preventDefault();  // Previne o comportamento padrão de envio do formulário
     
             // Mostra a mensagem de sucesso
             document.getElementById('mensagem-sucesso').style.display = 'block';
     
             // Opcional: Oculta o formulário
             document.getElementById('contato-form').style.display = 'none';
+    
+            // Redireciona para a página inicial após um atraso de 2 segundos
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 2000);  // 2000 milissegundos = 2 segundos
         });
     </script>
     
