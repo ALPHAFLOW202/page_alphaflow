@@ -37,7 +37,7 @@
         </form>
         
         <div id="mensagem-sucesso" style="display: none;">
-            <p>Obrigado por entrar em contato! Sua mensagem foi enviada.</p>
+            <p>Obrigado por entrar em contato! Sua mensagem foi enviadaa.</p>
         </div>
 
         <div class="info-contato">
@@ -49,22 +49,16 @@
         <p>&copy; 2023 Alphaflow</p>
     </footer>
 
-   <script>
-        document.getElementById('contato-form').addEventListener('submit', function(event) {
-            event.preventDefault();  // Previne o comportamento padrão de envio do formulário
-    
-            // Mostra a mensagem de sucesso
-            document.getElementById('mensagem-sucesso').style.display = 'block';
-    
-            // Opcional: Oculta o formulário
-            document.getElementById('contato-form').style.display = 'none';
-    
-            // Redireciona para a página inicial após um atraso de 2 segundos
-            setTimeout(function() {
-                window.location.href = "index.html";
-            }, 2000);  // 2000 milissegundos = 2 segundos
-        });
-    </script>
+<script>
+    document.getElementById('contato-form').addEventListener('submit', function() {
+        // Mostra a mensagem de sucesso
+        document.getElementById('mensagem-sucesso').style.display = 'block';
+
+        // Opcional: Oculta o formulário
+        document.getElementById('contato-form').style.display = 'none';
+    });
+</script>
+
     
 </body>
 </html>
